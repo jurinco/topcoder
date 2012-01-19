@@ -1,3 +1,8 @@
+/*
+ * SRM150D2-250
+ * SOLVED
+ */
+
 import static java.lang.Math.*;
 
 public class WidgetRepairs {
