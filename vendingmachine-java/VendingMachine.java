@@ -1,3 +1,8 @@
+/*
+ * SRM145D2-1000
+ * SOLVED
+ */
+
 import static java.lang.Math.*;
 
 public class VendingMachine {
