@@ -1,3 +1,8 @@
+/*
+ * SRM527D1-275
+ * SOLVED
+ */
+
 import static java.lang.Math.*;
 
 public class P8XGraphBuilder {
