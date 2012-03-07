@@ -9,8 +9,8 @@ public class RollingDiceDivOne {
 
 	/**
 	 * In each step maximum-probability numbers lay on FLAT top of distribution.
-	 * Also, distribution is obviously symmetric
-	 * So new maximum-probability numbers are based on flat, moved right and reduced
+	 * Also, distribution is obviously symmetric So new maximum-probability
+	 * numbers are based on flat, moved right and reduced
 	 */
 	public long mostLikely(int[] dice) {
 		Arrays.sort(dice);
