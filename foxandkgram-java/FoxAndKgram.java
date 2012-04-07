@@ -4,7 +4,6 @@
  * UGLY
  */
 
-
 import java.util.*;
 import static java.lang.Math.*;
 
@@ -29,7 +28,7 @@ public class FoxAndKgram {
 			if (!possOne(k, len, marked) && !possTwo(k, len, marked))
 				return false;
 		}
-		
+
 		return true;
 	}
 
@@ -59,7 +58,7 @@ public class FoxAndKgram {
 		int am = 0;
 		for (int r1 : arr)
 			for (int r2 : arr)
-			am = max(am, r1+r2+1);
+				am = max(am, r1 + r2 + 1);
 		return am;
 	}
 
