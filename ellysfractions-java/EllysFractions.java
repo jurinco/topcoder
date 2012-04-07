@@ -23,9 +23,9 @@ public class EllysFractions {
 		return sum;
 	}
 
-	private boolean isPrime(int i) {
-		for (int m = 2; m < i; ++m)
-			if (i % m == 0)
+	private boolean isPrime(int n) {
+		for (int m = 2, e = (int) Math.sqrt(n); m <= e; ++m)
+			if (n % m == 0)
 				return false;
 
 		return true;
