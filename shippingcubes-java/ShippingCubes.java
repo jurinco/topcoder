@@ -1,5 +1,5 @@
 /*
- * SRM524D2-250
+ * SRM524-D2-250
  * SOLVED
  */
 import static java.lang.Math.*;

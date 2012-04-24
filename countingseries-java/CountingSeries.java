@@ -1,3 +1,8 @@
+/*
+ * SRM144-D2-500
+ * UNSOLVED
+ */
+
 public class CountingSeries {
 
 	private boolean inArithm(long n, long a, long b) {

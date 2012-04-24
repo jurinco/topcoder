@@ -1,3 +1,8 @@
+/*
+ * SRM145-D2-500
+ * UNSOLVED
+ */
+
 public class ExerciseMachine {
 
 	public int getPercentages(String time) {

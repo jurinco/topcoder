@@ -1,7 +1,8 @@
 /*
- * SRM524D2-1000
+ * SRM524-D2-1000
  * UNSOLVED
  */
+
 import java.math.BigInteger;
 import java.util.*;
 import static java.lang.Math.*;
@@ -16,6 +17,7 @@ public class MultiplesWithLimit {
 
 		Arrays.sort(forbiddenDigits);
 
+		return "";
 	}
 
 }

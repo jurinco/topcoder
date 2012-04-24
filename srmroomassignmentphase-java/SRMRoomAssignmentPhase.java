@@ -1,5 +1,5 @@
 /*
- * SRM520D2-250
+ * SRM520-D2-250
  * SOLVED
  */
 import java.util.*;

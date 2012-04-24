@@ -1,3 +1,8 @@
+/*
+ * SRM146-D2-500
+ * UNSOLVED
+ */
+
 import static java.lang.Math.*;
 
 public class RectangularGrid {

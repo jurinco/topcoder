@@ -1,3 +1,8 @@
+/*
+ * SRM525-D1-300
+ * UNSOLVED
+ */
+
 import static java.lang.Math.*;
 
 public class DropCoins {

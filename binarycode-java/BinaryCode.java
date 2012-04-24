@@ -1,3 +1,8 @@
+/*
+ * SRM144-D2-500
+ * UNSOLVED
+ */
+
 public class BinaryCode {
 
 	public String[] decode(String message) {

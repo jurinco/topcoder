@@ -1,3 +1,8 @@
+/*
+ * SRM145-D2-250
+ * UNSOLVED
+ */
+
 public class ImageDithering {
 
 	public int count(String dithered, String[] screen) {

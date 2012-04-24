@@ -1,3 +1,7 @@
+/*
+ * SRM524-D1-250
+ * UNSOLVED
+ */
 
 public class MagicDiamonds {
 
