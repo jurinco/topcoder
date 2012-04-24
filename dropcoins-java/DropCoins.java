@@ -21,8 +21,7 @@ public class DropCoins {
 				psums[0][y] += psums[0][y - 1];
 
 			for (int x = 1; x < w; ++x) {
-				psums[x][y] = psums[x - 1][y]
-						+ (board[y].charAt(x) == 'o' ? 1 : 0);
+				psums[x][y] = psums[x - 1][y] + (board[y].charAt(x) == 'o' ? 1 : 0);
 
 				if (y != 0)
 					psums[x][y] += psums[x][y - 1] - psums[x - 1][y - 1];

@@ -11,11 +11,11 @@ public class MagicCandy {
 		int i = n;
 		while (n > 1) {
 			int sn = (int) sqrt(n);
-			
-			if (sn*sn == n)
+
+			if (sn * sn == n)
 				i--;
-			
-			n -= sn;			
+
+			n -= sn;
 		}
 
 		return i;

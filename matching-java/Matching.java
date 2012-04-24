@@ -5,11 +5,8 @@
 
 public class Matching {
 
-	private static final String[][] features = new String[][] {
-			new String[] { "CIRCLE", "SQUIGGLE", "DIAMOND" },
-			new String[] { "RED", "BLUE", "GREEN" },
-			new String[] { "SOLID", "STRIPED", "EMPTY" },
-			new String[] { "ONE", "TWO", "THREE" } };
+	private static final String[][] features = new String[][] { new String[] { "CIRCLE", "SQUIGGLE", "DIAMOND" }, new String[] { "RED", "BLUE", "GREEN" },
+			new String[] { "SOLID", "STRIPED", "EMPTY" }, new String[] { "ONE", "TWO", "THREE" } };
 
 	private String findMatch(String first, String second, int feature) {
 		if (first.equals(second))

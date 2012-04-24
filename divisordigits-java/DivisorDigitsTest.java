@@ -4,51 +4,51 @@ import org.junit.Test;
 
 public class DivisorDigitsTest {
 
-    protected DivisorDigits solution;
+	protected DivisorDigits solution;
 
-    @Before
-    public void setUp() {
-        solution = new DivisorDigits();
-    }
+	@Before
+	public void setUp() {
+		solution = new DivisorDigits();
+	}
 
-    @Test(timeout = 2000)
-    public void testCase0() {
-        int number = 12345;
+	@Test(timeout = 2000)
+	public void testCase0() {
+		int number = 12345;
 
-        int expected = 3;
-        int actual = solution.howMany(number);
+		int expected = 3;
+		int actual = solution.howMany(number);
 
-        Assert.assertEquals(expected, actual);
-    }
+		Assert.assertEquals(expected, actual);
+	}
 
-    @Test(timeout = 2000)
-    public void testCase1() {
-        int number = 661232;
+	@Test(timeout = 2000)
+	public void testCase1() {
+		int number = 661232;
 
-        int expected = 3;
-        int actual = solution.howMany(number);
+		int expected = 3;
+		int actual = solution.howMany(number);
 
-        Assert.assertEquals(expected, actual);
-    }
+		Assert.assertEquals(expected, actual);
+	}
 
-    @Test(timeout = 2000)
-    public void testCase2() {
-        int number = 52527;
+	@Test(timeout = 2000)
+	public void testCase2() {
+		int number = 52527;
 
-        int expected = 0;
-        int actual = solution.howMany(number);
+		int expected = 0;
+		int actual = solution.howMany(number);
 
-        Assert.assertEquals(expected, actual);
-    }
+		Assert.assertEquals(expected, actual);
+	}
 
-    @Test(timeout = 2000)
-    public void testCase3() {
-        int number = 730000000;
+	@Test(timeout = 2000)
+	public void testCase3() {
+		int number = 730000000;
 
-        int expected = 0;
-        int actual = solution.howMany(number);
+		int expected = 0;
+		int actual = solution.howMany(number);
 
-        Assert.assertEquals(expected, actual);
-    }
+		Assert.assertEquals(expected, actual);
+	}
 
 }

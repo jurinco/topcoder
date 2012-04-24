@@ -155,7 +155,7 @@ public class P8XMatrixRecovery {
 	}
 
 	private boolean allColCands(String[] columns, BitSet[] colCands, int y, int x, char c) {
-		for (int i = 0; i < columns.length; ++ i)
+		for (int i = 0; i < columns.length; ++i)
 			if (colCands[x].get(i) && columns[i].charAt(y) != c)
 				return false;
 
