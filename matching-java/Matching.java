@@ -1,6 +1,6 @@
 /*
  * SRM176-D1-250
- * UNSOLVED
+ * SOLVED
  */
 
 public class Matching {
