@@ -1,6 +1,6 @@
 /*
  * SRM148-D2-600
- * UNSOLVED
+ * SOLVED
  */
 
 public class CeyKaps {

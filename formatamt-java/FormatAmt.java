@@ -1,6 +1,6 @@
 /*
  * SRM149-D2-250
- * UNSOLVED
+ * SOLVED
  */
 
 public class FormatAmt {

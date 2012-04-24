@@ -1,6 +1,6 @@
 /*
  * SRM149-D2-500
- * UNSOLVED
+ * SOLVED
  */
 
 import static java.lang.Math.*;

@@ -1,6 +1,6 @@
 /*
- * SRM144-D2-500
- * UNSOLVED
+ * SRM144-D2-550
+ * SOLVED
  */
 
 public class BinaryCode {

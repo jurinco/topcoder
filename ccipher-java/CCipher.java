@@ -1,6 +1,6 @@
 /*
  * SRM147-D2-250
- * UNSOLVED
+ * SOLVED
  */
 
 public class CCipher {

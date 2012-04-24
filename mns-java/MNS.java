@@ -1,6 +1,7 @@
 /*
  * SRM148-D2-1000
- * UNSOLVED
+ * SOLVED
+ * UGLY?
  */
 
 public class MNS {

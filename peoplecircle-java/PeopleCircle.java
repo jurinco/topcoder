@@ -1,6 +1,6 @@
 /*
  * SRM147-D2-600
- * UNSOLVED
+ * SOLVED
  */
 
 import java.util.*;

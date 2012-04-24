@@ -1,6 +1,7 @@
 /*
  * SRM150-D2-1100
- * UNSOLVED
+ * SOLVED
+ * UGLY
  */
 
 public class BrickByBrick {

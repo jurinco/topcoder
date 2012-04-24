@@ -1,6 +1,6 @@
 /*
  * SRM145-D2-500
- * UNSOLVED
+ * SOLVED
  */
 
 public class ExerciseMachine {

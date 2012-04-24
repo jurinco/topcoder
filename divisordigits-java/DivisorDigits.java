@@ -1,6 +1,6 @@
 /*
  * SRM148-D2-250
- * UNSOLVED
+ * SOLVED
  */
 
 public class DivisorDigits {

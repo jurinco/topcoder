@@ -1,6 +1,6 @@
 /*
  * SRM145-D2-250
- * UNSOLVED
+ * SOLVED
  */
 
 public class ImageDithering {
