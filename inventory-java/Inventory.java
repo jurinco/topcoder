@@ -1,0 +1,21 @@
+/*
+ * SRM153-D2-500
+ * SOLVED
+ */
+
+public class Inventory {
+
+	public int monthlyOrder(int[] sales, int[] daysAvailable) {
+		double sum = 0;
+		int count = 0;
+
+		for (int i = 0; i < sales.length; ++i)
+			if (daysAvailable[i] > 0) {
+				sum += sales[i] * 30.0 / daysAvailable[i];
+				count++;
+			}
+
+		return (int) Math.ceil(sum / count - 1e-9);
+	}
+
+}
