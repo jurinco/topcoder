@@ -1,6 +1,7 @@
 /*
  * SRM550-D1-300
  * SOLVED
+ * UGLY
  */
 
 import java.util.*;
