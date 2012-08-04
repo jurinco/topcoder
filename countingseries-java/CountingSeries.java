@@ -1,36 +1,27 @@
 /*
  * SRM523-D1-250
- * UNSOLVED
+ * SRM523-D2-500
+ * SOLVED
  */
 
 public class CountingSeries {
 
-	private boolean inArithm(long n, long a, long b) {
-		return (n - a) % b == 0 && n >= a;
-	}
-
 	public long countThem(long a, long b, long c, long d, long upperBound) {
-		long count = 0;
+		long count = upperBound >= a ? (upperBound - a) / b + 1 : 0;
 
-		if (a > upperBound)
-			count = 0;
-		else
-			count = (upperBound - a) / b + 1;
+		if (d == 1)
+			return count + (c <= upperBound && (c < a || (c - a) % b > 0) ? 1 : 0);
 
-		if (d == 1) {
-			if (c <= upperBound && !inArithm(c, a, b))
+		long v = c;
+		while (v <= upperBound) {
+			if (v < a || (v - a) % b > 0)
 				count++;
-		} else {
-			long n = c;
-			while (n <= upperBound) {
-				if (!inArithm(n, a, b))
-					count++;
 
-				n = n * d;
-			}
+			v *= d;
 		}
 
 		return count;
+
 	}
 
 }
