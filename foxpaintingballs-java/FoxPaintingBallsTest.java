@@ -127,4 +127,30 @@ public class FoxPaintingBallsTest {
 
 		Assert.assertEquals(expected, actual);
 	}
+
+	@Test(timeout = 2000)
+	public void testCase9() {
+		long R = 100;
+		long G = 100;
+		long B = 200;
+		int N = 4;
+
+		long expected = 33;
+		long actual = solution.theMax(R, G, B, N);
+
+		Assert.assertEquals(expected, actual);
+	}
+
+	@Test(timeout = 2000)
+	public void testCase10() {
+		long R = 100;
+		long G = 100;
+		long B = 103;
+		int N = 4;
+
+		long expected = 30;
+		long actual = solution.theMax(R, G, B, N);
+
+		Assert.assertEquals(expected, actual);
+	}
 }

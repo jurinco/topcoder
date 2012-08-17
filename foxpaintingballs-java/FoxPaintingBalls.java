@@ -8,16 +8,15 @@ import static java.lang.Math.*;
 public class FoxPaintingBalls {
 
 	public long theMax(long R, long G, long B, int N) {
+		long sum = R + G + B;
+
 		if (N == 1)
-			return R + G + B;
+			return sum;
 
+		long min = min(R, min(G, B));
 		long size = N * ((long) N + 1) / 2;
-		long c = size / 3;
 
-		if (size % 3 == 0)
-			return min(R / c, min(G / c, B / c));
-
-		return min(min((R + G + B) / (3 * c + 1), R / c), min(G / c, B / c));
+		return min(sum / size, min / (size / 3));
 	}
 
 }
