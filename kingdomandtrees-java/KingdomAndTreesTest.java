@@ -60,14 +60,4 @@ public class KingdomAndTreesTest {
 
 		Assert.assertEquals(expected, actual);
 	}
-
-	@Test(timeout = 2000)
-	public void testCase5() {
-		int[] heights = new int[] { 1, 1, 1, 5, 1, 1 };
-
-		int expected = 2;
-		int actual = solution.minLevel(heights);
-
-		Assert.assertEquals(expected, actual);
-	}
 }
