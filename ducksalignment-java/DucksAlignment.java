@@ -1,93 +1,74 @@
 /*
  * SRM526-D1-250
- * UNSOLVED
+ * SOLVED
  */
 
-import java.util.*;
 import static java.lang.Math.*;
-
-class Duck {
-	public final int x, y;
-
-	public Duck(int x, int y) {
-		this.x = x;
-		this.y = y;
-	}
-}
 
 public class DucksAlignment {
 
-	int colCost(List<Duck> ducks, int x, int h) {
-		int[] coords = new int[ducks.size()];
-		int cost = 0;
-
-		for (int i = 0; i < ducks.size(); ++i) {
-			coords[i] = ducks.get(i).y;
-			cost += abs(ducks.get(i).x - x);
-		}
-
-		return cost + groupCost(coords, h);
-	}
-
-	int rowCost(List<Duck> ducks, int y, int w) {
-		int[] coords = new int[ducks.size()];
-		int cost = 0;
-
-		for (int i = 0; i < ducks.size(); ++i) {
-			coords[i] = ducks.get(i).x;
-			cost += abs(ducks.get(i).y - y);
-		}
-
-		return cost + groupCost(coords, w);
-	}
-
-	int groupCost(int[] coords, int m) {
-		Arrays.sort(coords);
-
-		int minCost = Integer.MAX_VALUE;
-
-		for (int first = 0; first <= m - coords.length; ++first) {
-			int cost = 0;
-			int prev = first;
-
-			for (int i = 0; i < coords.length; ++i) {
-				cost += abs(coords[i] - prev);
-				prev++;
-			}
-
-			minCost = min(cost, minCost);
-		}
-
-		return minCost;
-	}
-
-	List<Duck> countDucks(String[] grid) {
-		ArrayList<Duck> res = new ArrayList<Duck>();
-		int w = grid[0].length();
-		int h = grid.length;
-
-		for (int y = 0; y < h; ++y) {
-			for (int x = 0; x < w; ++x) {
-				if (grid[y].charAt(x) == 'o')
-					res.add(new Duck(x, y));
-			}
-		}
-
-		return res;
-	}
-
 	public int minimumTime(String[] grid) {
-		List<Duck> ducks = countDucks(grid);
+		int h = grid.length;
+		int w = grid[0].length();
 
-		int min = Integer.MAX_VALUE;
+		int[] cols = new int[h];
+		int[] rows = new int[w];
 
-		for (int x = 0; x < grid[0].length(); ++x)
-			min = min(min, colCost(ducks, x, grid.length));
+		for (int i = 0; i < h; ++i)
+			cols[i] = grid[i].indexOf('o');
 
-		for (int y = 0; y < grid.length; ++y)
-			min = min(min, rowCost(ducks, y, grid[0].length()));
+		for (int i = 0; i < w; ++i)
+			rows[i] = findRow(grid, i);
 
-		return min;
+		int c = 0;
+
+		for (int r : rows)
+			if (r >= 0)
+				++c;
+
+		return min(align(cols, w, h) + group(cols, h, c), align(rows, h, w) + group(rows, w, c));
+	}
+
+	private int group(int[] cols, int h, int c) {
+		int mcg = Integer.MAX_VALUE;
+
+		for (int i = 0; i <= h - c; ++i) {
+			int cg = 0, ci = 0;
+
+			for (int j = 0; j < h; ++j)
+				if (cols[j] >= 0) {
+					cg += abs(j - i - ci);
+					ci++;
+				}
+
+			mcg = min(mcg, cg);
+		}
+
+		return mcg;
+	}
+
+	private int align(int[] cols, int w, int h) {
+		int mcp = Integer.MAX_VALUE;
+
+		for (int i = 0; i < w; ++i) {
+			int cp = 0;
+
+			for (int j = 0; j < h; ++j)
+				if (cols[j] >= 0)
+					cp += abs(cols[j] - i);
+
+			mcp = min(mcp, cp);
+		}
+
+		return mcp;
+	}
+
+	private int findRow(String[] grid, int c) {
+		for (int r = 0; r < grid.length; ++r)
+			if (grid[r].charAt(c) == 'o')
+				return r;
+
+		return -1;
 	}
 
 }
