@@ -65,7 +65,7 @@ public class TheDivisionGameTest {
 
         Assert.assertEquals(expected, actual);
     }
-    
+
     @Test(timeout = 2000)
     public void testCaseBig() {
         int L = 1000000000;

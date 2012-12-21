@@ -33,7 +33,7 @@ public class MonstersValley {
 		for (int i = 0; i <= dread.length * 2; ++i)
 			if (maxDread[dread.length - 1][i] >= 0)
 				return i;
-		
+
 		return -1;
 	}
 

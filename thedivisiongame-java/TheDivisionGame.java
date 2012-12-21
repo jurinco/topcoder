@@ -33,7 +33,7 @@ public class TheDivisionGame {
 		for (int i = 2; i < primeArr.length; ++i)
 			if (primeArr[i])
 				primeList.add(i);
-		
+
 		System.out.println(primeList.size());
 
 		Integer[] primes = primeList.toArray(new Integer[primeList.size()]);
