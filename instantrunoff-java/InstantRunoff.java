@@ -23,12 +23,12 @@ public class InstantRunoff {
 
 			int minvote = Integer.MAX_VALUE;
 			for (int i = 0; i < votes.length; ++i)
-				if (active.contains((char)(i + 'A')))
+				if (active.contains((char) (i + 'A')))
 					minvote = min(minvote, votes[i]);
 
 			for (int i = 0; i < votes.length; ++i)
 				if (votes[i] == minvote)
-					active.remove((char)(i + 'A'));
+					active.remove((char) (i + 'A'));
 		}
 
 		if (active.isEmpty())

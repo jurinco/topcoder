@@ -54,7 +54,7 @@ public class Factorization {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param count
 	 * @return i = (n-3)/2, n = i*2 + 3
 	 */

@@ -8,7 +8,7 @@ import static java.lang.Math.*;
 public class MonstersValley {
 
 	public int minimumPrice(long[] dread, int[] price) {
-		long maxDread[][] = new long[dread.length][dread.length * 2+1];
+		long maxDread[][] = new long[dread.length][dread.length * 2 + 1];
 
 		for (int i = 0; i < dread.length; ++i) {
 			for (int j = 0; j < dread.length * 2; ++j) {

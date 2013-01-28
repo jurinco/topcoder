@@ -84,7 +84,6 @@ public class DengklekMakingChains {
 		int[] l1 = bestLeft.first();
 		int[] r1 = bestRight.first();
 
-
 		if (l1[1] != r1[1])
 			return l1[0] + beauty + r1[0];
 

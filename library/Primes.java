@@ -33,7 +33,7 @@ public class Primes {
 
 	/**
 	 * Sieve with odd array result
-	 * 
+	 *
 	 * @param m
 	 *            - amount of numbers
 	 * @return - array, whose indexes correponds to [3, 5, 7], so i = (n-3) / 2
