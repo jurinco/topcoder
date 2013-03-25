@@ -87,11 +87,11 @@ public class FoxAndMp3Test {
 			String[] data = new String[n];
 			String[] actual = solution.playList(n);
 
-			for (int i = 1; i <= n; ++ i)
-				data[i-1] = i + ".mp3";
+			for (int i = 1; i <= n; ++i)
+				data[i - 1] = i + ".mp3";
 
 			Arrays.sort(data);
-			String[] expected = Arrays.copyOf(data, Math.min(n,50));
+			String[] expected = Arrays.copyOf(data, Math.min(n, 50));
 
 			Assert.assertArrayEquals(expected, actual);
 		}

@@ -8,33 +8,33 @@ public class GogoXMarisaKirisimaTest {
 
 	/*
 	 * @Before public void setUp() { solution = new GogoXMarisaKirisima(); }
-	 *
+	 * 
 	 * @Test(timeout = 2000) public void testCase0() { String[] choices = new
 	 * String[]{"NYN", "YNY", "NNN"};
-	 *
+	 * 
 	 * int expected = 2; int actual = solution.solve(choices);
-	 *
+	 * 
 	 * Assert.assertEquals(expected, actual); }
-	 *
+	 * 
 	 * @Test(timeout = 2000) public void testCase1() { String[] choices = new
 	 * String[]{"NNY", "YNY", "YNN"};
-	 *
+	 * 
 	 * int expected = 2; int actual = solution.solve(choices);
-	 *
+	 * 
 	 * Assert.assertEquals(expected, actual); }
-	 *
+	 * 
 	 * @Test(timeout = 2000) public void testCase2() { String[] choices = new
 	 * String[]{"NN", "NN"};
-	 *
+	 * 
 	 * int expected = 0; int actual = solution.solve(choices);
-	 *
+	 * 
 	 * Assert.assertEquals(expected, actual); }
-	 *
+	 * 
 	 * @Test(timeout = 2000) public void testCase3() { String[] choices = new
 	 * String[]{"NYYY", "NNNY", "NNNY", "NNNN"};
-	 *
+	 * 
 	 * int expected = 3; int actual = solution.solve(choices);
-	 *
+	 * 
 	 * Assert.assertEquals(expected, actual); }
 	 */
 	@Test(timeout = 2000)

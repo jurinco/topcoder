@@ -4,55 +4,55 @@ import org.junit.Test;
 
 public class TheNumberGameTest {
 
-    protected TheNumberGame solution;
+	protected TheNumberGame solution;
 
-    @Before
-    public void setUp() {
-        solution = new TheNumberGame();
-    }
+	@Before
+	public void setUp() {
+		solution = new TheNumberGame();
+	}
 
-    @Test(timeout = 2000)
-    public void testCase0() {
-        int A = 45;
-        int B = 4;
+	@Test(timeout = 2000)
+	public void testCase0() {
+		int A = 45;
+		int B = 4;
 
-        String expected = "Manao wins";
-        String actual = solution.determineOutcome(A, B);
+		String expected = "Manao wins";
+		String actual = solution.determineOutcome(A, B);
 
-        Assert.assertEquals(expected, actual);
-    }
+		Assert.assertEquals(expected, actual);
+	}
 
-    @Test(timeout = 2000)
-    public void testCase1() {
-        int A = 45;
-        int B = 5;
+	@Test(timeout = 2000)
+	public void testCase1() {
+		int A = 45;
+		int B = 5;
 
-        String expected = "Manao wins";
-        String actual = solution.determineOutcome(A, B);
+		String expected = "Manao wins";
+		String actual = solution.determineOutcome(A, B);
 
-        Assert.assertEquals(expected, actual);
-    }
+		Assert.assertEquals(expected, actual);
+	}
 
-    @Test(timeout = 2000)
-    public void testCase2() {
-        int A = 99;
-        int B = 123;
+	@Test(timeout = 2000)
+	public void testCase2() {
+		int A = 99;
+		int B = 123;
 
-        String expected = "Manao loses";
-        String actual = solution.determineOutcome(A, B);
+		String expected = "Manao loses";
+		String actual = solution.determineOutcome(A, B);
 
-        Assert.assertEquals(expected, actual);
-    }
+		Assert.assertEquals(expected, actual);
+	}
 
-    @Test(timeout = 2000)
-    public void testCase3() {
-        int A = 2356236;
-        int B = 5666;
+	@Test(timeout = 2000)
+	public void testCase3() {
+		int A = 2356236;
+		int B = 5666;
 
-        String expected = "Manao loses";
-        String actual = solution.determineOutcome(A, B);
+		String expected = "Manao loses";
+		String actual = solution.determineOutcome(A, B);
 
-        Assert.assertEquals(expected, actual);
-    }
+		Assert.assertEquals(expected, actual);
+	}
 
 }
