@@ -1,6 +1,8 @@
 import static java.lang.Math.min;
 
+import java.util.ArrayList;
 import java.util.BitSet;
+import java.util.Collections;
 import java.util.Map;
 
 /**
@@ -10,6 +12,33 @@ public class Graphs {
 
 	long INF = Long.MAX_VALUE >> 4;
 
+	public ArrayList<Integer> topoSort(String[] requires) {
+		boolean[] marked = new boolean[requires.length];
+		ArrayList<Integer> order = new ArrayList<Integer>();
+
+		for (int i = 0; i < requires.length; ++i)
+			topoDfs(i, requires, order, marked);
+
+		Collections.reverse(order);
+
+		return order;
+	}
+
+	public void topoDfs(int i, String[] requires, ArrayList<Integer> order, boolean[] marked) {
+		if (marked[i])
+			return;
+
+		marked[i] = true;
+		for (int j = 0; j < requires[i].length(); ++j)
+			if (requires[i].charAt(j) == 'Y')
+				topoDfs(j, requires, order, marked);
+
+		order.add(i);
+	}
+
+	/*
+	 * Максимальное паросочетание
+	 */
 	public boolean kuhn(int v, Map<Integer, Integer> marks, BitSet marked, boolean matrix[][]) {
 		if (marked.get(v))
 			return false;
